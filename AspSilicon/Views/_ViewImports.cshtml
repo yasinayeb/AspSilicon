@@ -2,3 +2,6 @@
 @using AspSilicon.Models
 @using Microsoft.AspNetCore.Identity
 @using Infrastructure.Entities
+@inject SignInManager<UserEntity> SignInManager
+@inject UserManager<UserEntity> UserManager
+@inject IConfiguration Configuration

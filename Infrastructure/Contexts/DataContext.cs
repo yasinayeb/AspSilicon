@@ -9,4 +9,8 @@ public class DataContext(DbContextOptions<DataContext> options) : IdentityDbCont
     public DbSet<SubscriberEntity> Subscribers { get; set; }
     public DbSet<CategoryEntity> Categories { get; set; }
     public DbSet<CourseEntity> Courses { get; set; }
+   
+    
+
+
 }

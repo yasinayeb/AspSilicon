@@ -395,15 +395,15 @@ header .container .nav-menu {
     display: flex;
     gap: 20px;
   }
-}
-header .container .nav-menu .nav-link {
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--color-gray-900);
-}
-header .container .nav-menu .nav-link.active, header .container .nav-menu .nav-link:hover {
-  color: var(--color-theme);
+  header .container .nav-menu .nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-gray-900);
+  }
+  header .container .nav-menu .nav-link.active, header .container .nav-menu .nav-link:hover {
+    color: var(--color-theme);
+  }
 }
 header .container .theme-switch {
   grid-area: switch;
@@ -422,6 +422,20 @@ header .container .account-buttons {
   header .container .account-buttons {
     display: flex;
     gap: 10px;
+  }
+  header .container .account-buttons .profile {
+    display: flex;
+    justify-content: center;
+  }
+  header .container .account-buttons .profile .image {
+    position: relative;
+  }
+  header .container .account-buttons .profile .image img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border: 1px solid var(--color-gray-400);
   }
 }
 header .container .btn-menu {
@@ -880,4 +894,63 @@ header .container .btn-menu {
 }
 .courses .container .items .course .content .footer .likes i {
   margin-right: 5px;
+}
+
+.account-profile .profile {
+  display: flex;
+  justify-content: center;
+}
+.account-profile .profile .image {
+  position: relative;
+}
+.account-profile .profile .image img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border: 1px solid var(--color-gray-400);
+}
+.account-profile .profile .image form {
+  position: relative;
+}
+.account-profile .profile .image form label {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+.account-profile .info {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.account-profile .info .displayname {
+  font-size: 1.3em;
+}
+.account-profile .info .email {
+  font-size: 0.8em;
+}
+
+.account {
+  height: 100%;
+  padding: 2rem 0;
+}
+.account .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+.account .container aside {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  border-right: 1px solid var(--color-gray-400);
+}
+.account .container aside .account-nav {
+  margin-top: 2rem;
+}
+.account .container aside .account-nav .btn {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.account .container main {
+  padding: 1rem 2rem;
 }
